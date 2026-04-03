@@ -1,0 +1,1 @@
+console.log("NexaApp loaded successfully.");

@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% block content %}
+
+<h2>Welcome to Demo Banking Portal</h2>
+
+<h3>Search</h3>
+<form action="/search" method="GET">
+    <input type="text" name="q" placeholder="Search here">
+    <button type="submit">Search</button>
+</form>
+
+<h3>Execute Command</h3>
+<form action="/run" method="POST">
+    <input type="text" name="command" placeholder="Enter command">
+    <button type="submit">Run</button>
+</form>
+
+<h3>User Profile</h3>
+<a href="/user/12345">View User 12345</a>
+
+{% endblock %}
